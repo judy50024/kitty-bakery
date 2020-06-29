@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    font-family: 'Kalam', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: #6A4A3F;
     font-size: 22px;
 }
@@ -90,6 +91,37 @@
     color:#484848;
 }
 
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-box{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-box .section{
+    margin: auto;
+    margin-bottom: 5rem;
+    height: 20rem;
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.product-box p{
+    text-align: center;
+    font-size: 18px;
+}
+
 .warp-box img{
     height:700px;
     width: 700px;
@@ -116,9 +148,21 @@
 }
 
 .location h2{
-    padding-top: 130px;
+    padding-top: 3rem;
     font-size: 48px;
     text-align: center;
+}
+
+.line-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location .line{
+    width: 500px;
+    height: 40px;
+    border-bottom: 4px solid #6A4A3F;
 }
 
 .location .place{
@@ -135,9 +179,32 @@
 
 .location h4{
     font-size: 36px;
+    padding: 2rem;
 }
 .location p{
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: roboto;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+button{
+    background-color: #F2CA9A;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: none;
+    border-bottom: solid 3px #6A4A3F;
+    font-weight: 600;
+
+    cursor: pointer;
+    cursor: auto;
 }
 
 
@@ -158,19 +225,25 @@ footer .list{
 }
 
 footer .social{
-    width: 10%;
+    width: 30%;
+    padding-top: 2rem;
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 
-footer li{
+footer a{
     color: white;
+    font-family: roboto;
     list-style: none;
-    font-size: 28px;
+    font-size: 20px;
+    text-decoration: none;
+
 }
 
 footer p{
     color: white;
-    font-size: 16px;
+    font-family: roboto;
+    font-size: 12px;
     padding: 1rem;
 }
